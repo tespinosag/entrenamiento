@@ -1,0 +1,63 @@
+<!--declara que el documento es HTML5 y especifica el idioma del contenido como inglés-->
+<!DOCTYPE html>
+<html lang="en">
+<!--contiene metadatos sobre el documento, como su título, que aparece en la pestaña del navegador.-->    
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
+  <!--contiene el contenido visible de la página.-->
+  <body>
+    <!--encabezado-->
+    <h2>CatPhotoApp</h2>
+    <!--designa el contenido principal del documento-->
+    <main>
+      <h3>Cat Photos</h3>
+      <!-- TODO: Add link to cat photos -->
+      <!--El atributo href="#" indica que el enlace actualmente no lleva a ninguna parte 
+      y target="_blank" hace que el enlace se abra en una nueva pestaña.-->
+      <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+      
+      <!--Un enlace que contiene una imagen (<img>). El src especifica la URL de la imagen 
+        y alt proporciona una descripción alternativa para usuarios que no pueden ver la imagen.-->
+      <a href="#"><img src="https://fcc.im/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+      <h3>Cat Lists</h3>
+
+      <!--Crear Listas-->
+      <div class="lists">
+        <p>Things cats <em>love</em>:</p>
+        <!--Lista desordenada-->
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <img src="lasagna.jpg" alt="Lasagna">
+        <p>Things cats <strong>hate</strong>:</p>
+        <!--Lista ordenada-->
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+      </div>
+      <img src="cats.jpg" alt="Cats">
+
+      <!--formulario-->
+      <form action="/submit-cat-photo">
+        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label><br>
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+
+        <label for="loving"><input id="loving" type="checkbox" name="personality" checked> Loving</label><br>
+        <label for="lazy"><input id="lazy" type="checkbox" name="personality"> Lazy</label><br>
+        <label for="energetic"><input id="energetic" type="checkbox" name="personality"> Energetic</label><br>
+
+        <input type="text" placeholder="cat photo URL" required><br>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <!--contiene el pie de página de la página-->
+    <footer>
+      <p><small>No Copyright - <a href="https://freecodecamp.org">freeCodeCamp.org</a></small></p>
+    </footer>
+  </body>
+</html>
